@@ -21,7 +21,7 @@ export const ScrollUp = () => {
   return(
     <>
     { isVisible && (
-      <div onClick={handleScrollUp} className="fixed bottom-5 right-7 z-50 cursor-pointer p-4 rounded-full bg-gray-600 w-2 h-2 flex items-center justify-center text-white  hover:bg-teal-900">
+      <div onClick={handleScrollUp} className="fixed bottom-5 right-7 z-40 cursor-pointer p-4 rounded-full bg-gray-600 w-2 h-2 flex items-center justify-center text-white  hover:bg-teal-900">
         <i className="fa-solid fa-chevron-up"/>
       </div>
     )}

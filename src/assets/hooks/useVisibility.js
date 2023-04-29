@@ -10,9 +10,9 @@ export const useVisibility = (initialValue) => {
     }
   }
   useEffect(() => {
-    document.addEventListener("click", handleClickOutside, true)
+    window.addEventListener("click", handleClickOutside, true)
     return () => {
-      document.removeEventListener("click", handleClickOutside, true)
+      window.removeEventListener("click", handleClickOutside, true)
     }
   }, [])
 

@@ -15,12 +15,12 @@ import { Project } from "./project"
 export const Portfolio = () => {
   const [isOpen, dataIndex, openModal, closeModal] = useModal()
   const { t } = useTranslation()
-  const sectionRef = useRef()
-  const isInViewport = useViewport(sectionRef)
+  const animatedSectionRef = useRef()
+  const isInViewport = useViewport(animatedSectionRef)
 
   return (
     <section id="portfolio" className={`bg-white py-10 `}>
-      <div ref={sectionRef} className={`mx-auto max-w-screen-xl `}>
+      <div ref={animatedSectionRef} className={`mx-auto max-w-screen-xl `}>
         <h1 className={`mb-8 text-center ${isInViewport ? "animate-fade-up" : ""}`}>
           {t("portfolio.title")}
         </h1>
@@ -65,7 +65,8 @@ const projects = [
       ],
     },
     tools: "React, redux-toolkit, react-router, axios, styled-components",
-    url: "http://www.ffxivcollect.com",
+    url: "https://github.com/kfrst/FFXIV-Collect-Imitation",
+    urlName: "FFXIV Collect Imitation (Repository)",
     images: [FFXIVCollect_1, FFXIVCollect_2, FFXIVCollect_3],
   },
   {
@@ -93,8 +94,9 @@ const projects = [
         "Imagen de un proyecto seleccionado",
       ],
     },
-    tools: "React, Tailwind CSS",
-    url: "http://www.kevinfravega.com",
+    tools: "React, Tailwind CSS, i18n",
+    url: "https://github.com/kfrst/Portfolio-web",
+    urlName: "Kevin Fravega - Portfolio (Repository)",
     images: [Portfolio_web_1, Portfolio_web_2, Portfolio_web_3, Portfolio_web_4],
   },
 ]

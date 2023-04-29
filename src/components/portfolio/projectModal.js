@@ -38,8 +38,13 @@ export const ProjectModal = (props) => {
                   </li>
                   <li>
                     <span>URL: </span>
-                    <a className="hover:text-neutral-700" href={project.url}>
-                      {project.url}
+                    <a
+                      className="hover:text-neutral-700"
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {project.urlName}
                     </a>
                   </li>
                 </ul>

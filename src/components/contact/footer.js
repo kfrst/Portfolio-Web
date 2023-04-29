@@ -26,7 +26,9 @@ export const Footer = () => {
               <li>
                 <a
                   className="flex items-center gap-2 [&>span]:hover:text-gray-700 [&>p]:hover:text-neutral-700"
-                  href="/#"
+                  href="https://github.com/kfrst"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span className="text-gray-900">
                     <i className="fab fa-github" />
@@ -38,6 +40,8 @@ export const Footer = () => {
                 <a
                   className="flex items-center gap-2 [&>span]:hover:text-gray-700 [&>p]:hover:text-neutral-700"
                   href="https://www.linkedin.com/in/kevin-fravega-stevenson-3b718815a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span className="text-gray-900">
                     <i className="fab fa-linkedin" />

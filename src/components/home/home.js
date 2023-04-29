@@ -5,14 +5,14 @@ import { useRef } from "react"
 import { useViewport } from "../../assets/hooks/useViewport"
 
 export const Home = () => {
-  const sectionRef = useRef()
-  const isInViewport = useViewport(sectionRef)
+  const animatedSectionRef = useRef()
+  const isInViewport = useViewport(animatedSectionRef)
   const { t } = useTranslation()
   document.title = "Kevin Fravega"
   return (
     <section id="home" className="bg-white py-10 h-screen">
       <div
-        ref={sectionRef}
+        ref={animatedSectionRef}
         className={`flex max-sm:flex-col w-4/5 xl:w-1/2 h-full mx-auto max-w-screen-xl items-center justify-center gap-4 ${
           isInViewport ? "animate-fade-up" : ""
         }`}
