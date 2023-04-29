@@ -1,0 +1,34 @@
+{
+  "header":{
+    "home": "Inicio",
+    "resume": "Curriculum",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "home": {
+    "welcome": "Bienvenido",
+    "i": "Soy",
+    "job": "Desarrollador Front-end",
+    "presentation": "Soy un ingeniero en informática con orientación al desarrollo web Front-end, y busco expandir mis conocimientos para ser un desarollador Full-Stack",
+    "invitation": "Te invito a revisar mis perfiles en: "
+  },
+  "resume":{
+    "title": "Curriculum",
+    "experience": "Experiencia laboral",
+    "education": "Formación Académica",
+    "cv": "Descarga mi CV"
+  },
+  "portfolio":{
+    "title": "Mis proyectos"
+  },
+  "project":{
+    "about": "Descripción",
+    "details": "Detalles",
+    "tools": "Herramientas: "
+  },
+  "footer":{
+    "contact": "¿Conversemos?",
+    "where": "Puedes encontrarme en: ",
+    "copyright": "Todos los derechos reservados."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "header":{
+    "home": "Home",
+    "resume": "Resume",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "i": "I'm",
+    "job": "A Front-end Developer",
+    "presentation": "I'm a computer science engineer focused on Front End web developement, looking to expand my knowledge to be a Fullstack web developer",
+    "invitation": "Take a look to my profiles: "
+  },
+  "resume":{
+    "title": "Resume",
+    "experience": "Experience",
+    "education": "Education",
+    "cv": "Download my CV"
+  },
+  "portfolio":{
+    "title": "My Projects"
+  },
+  "project":{
+    "about": "About",
+    "details": "Details",
+    "tools": "Tools: "
+  },
+  "footer":{
+    "contact": "Get in Touch",
+    "where": "You can find me: ",
+    "copyright": "All rights reserved."
+  }
+}
