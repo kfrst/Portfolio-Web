@@ -15,8 +15,12 @@ In the project directory (in a terminal), run:
 This portfolio is made with React JS and Tailwindcss and i18next (for localization). In this Portfolio you can see a part of my resume and the projects that i've made. All of the features that this portfolio has (modal, image slider, etc) is made from scratch (without additional dependencies)
 
 ### Deployed Portfolio
+<<<<<<< HEAD
 
 Here "" you can go and check my portfolio
+=======
+[Here](https://kevinfravega-portfolio.vercel.app/) you can go and review my portfolio
+>>>>>>> 81676f913721ff9ea11b02ae64c7f4682d5cdc19
 
 ### Technologies
 
