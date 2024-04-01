@@ -11,7 +11,7 @@ export const ImageSlider = ({ images, imagesTitles }) => {
     setImageIndex(previousIndex)
   }
   return (
-    <div className="flex md:h-full relative">
+    <div className="md:h-full relative">
       {imageIndex !== nextIndex && imageIndex !== previousIndex && (
         <>
           <button
@@ -32,11 +32,11 @@ export const ImageSlider = ({ images, imagesTitles }) => {
         return (
           <div
             className={` w-full md:h-full
-          ${index === imageIndex ? "animate-fade-1 block z-10 translate-x-0 flex" : "hidden"}`}
+          ${index === imageIndex ? "animate-fade-1 z-10 translate-x-0 flex" : "hidden"}`}
             key={index}
           >
             <img
-              className="w-full max-h-full md:h-full rounded-md border border border-slate-300"
+              className="w-full max-h-full md:h-full rounded-md border border-slate-300"
               src={image}
               alt={imagesTitles[index]}
             />

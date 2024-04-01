@@ -10,11 +10,11 @@ export const ProjectModal = (props) => {
   const handleModalClick = (e) => e.stopPropagation()
   return (
     <article
-      className="fixed flex items-center top-0 left-0 w-full h-full bg-black/50 z-50 "
+      className="fixed flex justify-center p-2 top-0 left-0 w-full h-full bg-black/50 z-50 touch-auto overflow-auto"
       onClick={closeModal}
     >
       <div
-        className="relative max-lg:m-2 mx-auto my-4 w-auto max-w-screen-lg bg-white rounded-xl"
+        className="relative m-auto my-4 w-auto h-fit max-w-screen-lg bg-white rounded-xl"
         onClick={handleModalClick}
       >
         <div className="p-4">
@@ -29,23 +29,38 @@ export const ProjectModal = (props) => {
               </div>
               <div className="text-neutral-900 flex flex-col px-4 w-full lg:w-2/5">
                 <h3 className="mb-2">{t("project.about")}</h3>
-                <p className="mb-2">{project[language].description}</p>
+                <p className="mb-2 whitespace-pre-wrap">{project[language].description}</p>
                 <h3 className="my-2">{t("project.details")}</h3>
                 <ul className="[&>li]:py-2">
                   <li>
                     <span>{t("project.tools")}</span>
                     {project.tools}
                   </li>
+                  {project.deploy && (
+                    <li>
+                      <span>Live demo: </span>
+                      <a
+                        className="hover:text-neutral-700"
+                        href={project.deploy}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {project.title}
+                      </a>
+                    </li>
+                  )}
                   <li>
-                    <span>URL: </span>
-                    <a
-                      className="hover:text-neutral-700"
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {project.urlName}
-                    </a>
+                    <span className="text-gray-900 gap-2">
+                      <a
+                        className="hover:text-neutral-700"
+                        href={project.repo.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fab fa-github pr-1" />
+                        {project.repo.urlName}
+                      </a>
+                    </span>
                   </li>
                 </ul>
               </div>

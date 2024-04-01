@@ -12,7 +12,7 @@ export const ResumeCard = (props) => {
         </p>
         <h3>{data[language].title}</h3>
         <p>{data.location}</p>
-        {data[language].description && <p className="text-justify">{data[language].description}</p>}
+        {data[language].description && <p>{data[language].description}</p>}
       </div>
     </div>
   )
