@@ -16,7 +16,7 @@ This portfolio is made with React JS and Tailwindcss and i18next (for localizati
 
 ### Deployed Portfolio
 
-Here "" you can go and check my portfolio
+["Here"](https://kevinfravega-portfolio.vercel.app/) you can go and check my portfolio
 
 ### Technologies
 
